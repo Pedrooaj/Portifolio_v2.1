@@ -1,0 +1,176 @@
+body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #001132;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+div{
+    z-index: 0;
+}
+
+#icon{
+    font-size: 1.7rem;
+}
+
+#default-carousel{
+    width: 100%;
+    margin-top: 2px;
+}
+
+#conteudo{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#carrosel-div{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+#formações{
+    width: 100%;
+    padding: 5%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #152e52ab;
+    
+}
+
+#formações > h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+#cards{
+    margin-top: 5px;
+    display: flex;
+    gap: 30px;
+}
+
+#cards > div{
+    width: 55%;
+    padding: 10px;
+    transition: 1s;
+}
+
+#cards > div:hover{
+    background-color: aqua;
+}
+
+
+#unifor-image{
+    display: flex;
+    justify-content: center;
+
+}
+
+#projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 3%;
+}
+
+#projetos > h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 5%;
+}
+
+#list > li a{
+    cursor: pointer;
+}
+
+#cards-projetos{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 3%;
+}
+
+#cards-2{
+    display: flex;
+    gap: 50px;
+    margin-top: 2%;
+}
+
+
+#rodape{
+    position: block;
+    bottom: 0%;
+    width: 100%;
+    margin-top: 10%;
+}
+
+#logo-a{
+    background-color: rgb(218, 204, 204);
+    border-radius: 20px;
+    padding: 4px;
+}
+
+
+@media (max-width: 768px) {
+    #carrosel-div{
+        margin-top: 25%;
+        width: 90%;
+    }
+
+    #cards-projetos{
+        flex-direction: column;
+    }
+
+    #cards-2{
+        flex-direction: column;
+    }
+
+    #cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cards > div{
+        width: 90%;
+    }
+
+    #grid-footer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #direitos{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo-footer{
+        display: flex;
+        justify-content: center;
+    }
+
+}
