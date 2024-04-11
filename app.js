@@ -21,3 +21,11 @@ scrollForma.addEventListener('click', () => {
 scrollSobre.addEventListener('click', () => {
     divSobre.scrollIntoView({ behavior: 'smooth', block: 'center' });
   });
+
+document.addEventListener("DOMContentLoaded", () => {
+  new TypeIt("#animated", {
+    speed:250,
+    strings: "Pedrooaj",
+    loop: true
+  }).go()
+})
