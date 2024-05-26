@@ -140,6 +140,10 @@ div{
         width: 90%;
     }
 
+    #buttons{
+        margin-bottom: 5%;
+    }
+
     #cards-projetos{
         flex-direction: column;
     }
